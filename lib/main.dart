@@ -5,11 +5,19 @@ import '/screens/welcome_screen.dart';
 import '/screens/login_screen.dart';
 import '/screens/registration_screen.dart';
 import '/screens/chat_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+
+//   await Firebase.initializeApp(
+//     options: DefaultFirebaseOptions.currentPlatform,
+// );
 
 
 void main() => runApp(FlashChat());
 
 class FlashChat extends StatelessWidget {
+
   const FlashChat({super.key});
 
   @override
